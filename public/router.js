@@ -34,7 +34,7 @@ const handleLocation = async () => {
     document.body.style.opacity = '0.75';
 
     try {
-        setBg(); // Updated function name
+        setBg(); 
 
         if (!route) {
             history.replaceState(null, null, '/404');
@@ -49,7 +49,7 @@ const handleLocation = async () => {
         await Promise.resolve(route(content));
 
         currentPage = path;
-        applyGlass(); // Updated function name
+        applyGlass(); 
 
     } catch (error) {
         console.error('Error loading page:', error);
