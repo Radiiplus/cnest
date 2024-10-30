@@ -28,7 +28,7 @@ export const applyGlass = () => {
   const img = new Image();
   img.src = './src/assets/img/img.jpg';
   img.onload = () => {
-    const pal = thief.getPal(img, 5);
+    const pal = thief.getPalette(img, 5);
     const grad = makeGrad(pal);
     const conts = document.querySelectorAll('.dynamic-container');
 
