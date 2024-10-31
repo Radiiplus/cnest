@@ -29,6 +29,13 @@ export function renderPage({
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent; 
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;        
       }
       html, body {
         height: 100%;
