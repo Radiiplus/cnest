@@ -38,15 +38,19 @@ export function renderPage({
         outline: none;        
       }
       html, body {
+        max-height: 100vh;
         height: 100%;
         display: flex;
+        flex: 1;
         flex-direction: column;
         overflow: hidden;
       }
       #root {
         display: flex;
         flex-direction: column;
+        max-height: 100vh;
         height: 100%;
+        flex: 1;
       }
       .header, .footer {
         background-color: rgba(128, 128, 128, 0.08);
@@ -67,7 +71,6 @@ export function renderPage({
         flex: 1;
         display: flex;
         align-items: center;
-        justify-content: center;
       }
       .container {
         text-align: center;
